@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Tutorials</title>
+</head>
+<body>
+    <header>
+        <h1>Github Tutorials</h1>
+        <p><strong>Disclaimer: </strong>This tutorial is for MESA's WEBD152 class on how to set up a website using Github's free hosting service.<br> I'm still learning as we go and I'm just as fresh to this as you are, just using what I've learned so far through trial and errors.<br></p>
+        <h2>Getting Started</h2>
+        <p>You do have to know a bit of command line not just to set up the website but also to keep uploading files for class.<br>
+        <h3>The General Steps</h3>
+        <ol>
+            <li>Create an account</li>
+            <li>Create new repository</li>
+            <li>Clone the repository</li>
+            <li>Go to repository's settings</li>
+            <li>Go down to pages</li>
+            <li>Make sure the source for Build and Deployment is<br>a) deploy from a branch and<br> b) under branch, main is selected and your folder is /(root)</li>
+            <li>Wait a bit</li>
+            <li>Refresh the page</li>
+            <li>Your repository pages settings should say<br>"Your site is live at https://username.github.io/repositoryname"</li>
+        </ol>
+        <h3>The Specifics</h3>
+        <p>Continuing from step 3: cloning the repository</p>
+        <ol>
+            <li>Open command line<br><br>
+            a) Windows: Press Windows Key + R, type in cmd.exe, press Enter.<br>
+            b) MacOS: Press ⌘ + Spacebar, or Command + Spacebar, type in Terminal. Press Enter.</li><br>
+            <li>Navigate to where you want the webd152 folder to be created using commands<br><br>
+            a) Most commonly used:
+                <ul>
+                    <li>pwd: print working directory</li>
+                    <li>cd: change directory</li>
+                    <li>ls: list files in a directory</li>
+                    <li>mkdir: create new directory</li>
+                    <li>rm: remove a file, add -r to remove a directory</li>
+                    <li>touch: create a file</li>
+                    <li>open: open a file</li>
+                    <li>code: open a file in Visuaal Studio Code(?)</li>
+                </ul>
+            b) Example: I want my wedb152 folder to be in MESA folder, it would look like<br>
+            cd Desktop/MESA/SM2024, you just need the command + directory path.
+            </li>
+            <li>To clone a directory:<br>
+            a) go to your webd152 repository's settings<br>
+            b) click on Code<br>
+            c) copy the local SSH link, it should look like<br>
+            git@github.com:username/webd152.git<br>
+            d) back to your command line / terminal<br>
+            e) type in the command: git clone [your local SSH link you just copied]<br>
+            so it would look like: git clone git@github.com:kpngo10/webd152.git<br>
+            f) folder called webd152 should be created in where your current directory is   
+            </li>
+        </ol>
+        <h3>Command Line Basics</h3>
+        <ul>
+            <li><strong>Windows:</strong> Press Windows Key + R, type in cmd.exe, press Enter.</li>
+            <li><strong>MacOS:</strong> Press ⌘ + Spacebar, or Command + Spacebar, type in Terminal. Press Enter.</li>
+    </header>
+    <main>
+        
+    </main>
+    
+</body>
+</html>
