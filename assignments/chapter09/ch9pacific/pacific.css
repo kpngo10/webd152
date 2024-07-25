@@ -16,7 +16,7 @@ header {
     background-repeat: no-repeat; /* bgr */
     background-size: contain; /* bgz */
     color: #fff;
-    padding: 0.5em auto;
+    padding: 0.5em; /* jigsaw gave an error saying auto is not a value for padding, so i took it out */
     text-align: center; /* tac */
 }
 
