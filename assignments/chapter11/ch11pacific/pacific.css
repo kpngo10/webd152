@@ -1,0 +1,364 @@
+body {
+    background-color: #eaeaea;
+    color: #555; /* c#555 */
+    font-family: Arial, Helvetica, sans-serif; /* ffa */ 
+}
+
+#wrapper {
+    background-color: #90c7e3; /* bgc#fff */
+    background-image: linear-gradient(#fff, #90c7e3);
+}
+
+header {
+    background-color: #001f6d; /* bgc#fff */
+    background-image: url(images/sunset.jpg);
+    background-position: right; /* bgdp */
+    background-repeat: no-repeat; /* bgr */
+    background-size: contain; /* bgz */
+    color: #fff;
+    padding: 0.5em; /* jigsaw gave an error saying auto is not a value for padding, so i took it out */
+    text-align: center; /* tac */
+}
+
+nav {
+    font-weight: bold; /* fwb */
+    padding: 0; /* p1em */
+    font-size: 120%; /*fz120%*/
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* lisnone */
+    padding-left: 0; /* p0 */
+    margin: 0; /* m0 */
+    font-size: 1.2em;
+}
+
+nav a {
+    text-decoration: none; /* tdn */
+    transition: color 3s ease-out;
+}
+
+nav a:link {
+    color: #5c7fa3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #a52a2a;
+
+}
+
+header a:link,
+header a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover {
+    color: #90c7e3;
+}
+
+main {
+    padding: 1px 20px 20px 20px; /* p1px20px20px20px */
+    display: block; /* dp */
+    background-color: #fff;
+    overflow: auto;
+}
+
+h1,
+h2,
+h3,
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* ff, g */
+}
+
+h1 {
+    padding-bottom: 0.5em; 
+    padding-top: 0.5em; /* mt0 */
+    letter-spacing: 0.25em; /* ls0.25 */
+    margin: 0;
+}
+
+h2 {
+    color: #1976d2; /* c#1976d2 */
+}
+
+h3 {
+    color: #003; /* c#003 */
+}
+
+footer {
+    font-size: 75%; /* fz75% */
+    font-style: italic; /* fsi */
+    text-align: center; /* tac */
+    padding: 2em; /* p2em */
+    background-color: #fff;
+}
+
+table {
+    border-bottom: 2px solid #3399CC;
+    border-collapse: separate;
+    display: block;
+}
+
+th {
+    background-color: #39c;
+    color: #fff;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #ffcd6f;
+}
+
+td,
+th {
+    /* border: 2px solid #3399CC; */
+    padding: 0.5em;
+}
+
+td {
+    text-align: center;
+}
+
+#homehero {
+    height: 300px; /* h300 */
+    background-image: url("images/coast2.jpg");
+    background-size: 100% 100%; /* bgs100%100% */
+    background-repeat: no-repeat; /* bgr */
+}
+
+#yurthero {
+    height: 300px; /* h300 */
+    background-image: url("images/yurt.jpg");
+    background-size: 100% 100%; /* bgs100%100% */
+    background-repeat: no-repeat; /* bgr */
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url("images/trail.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    font-size: 90%; /* fs90% */
+}
+
+.resort {
+    color: #1976d2; /* c#1976d2 */
+    font-weight: bold; /* fwb */
+}
+
+.text {
+    text-align: left;
+}
+
+/* Reservations Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+input,
+textarea {
+    margin-bottom: 0.5em;
+}
+
+video {
+    float: right;
+    margin: 1em;
+}
+
+#gallery {
+    display: grid;
+    gap: 2em;
+}
+
+#gallery img {
+    box-shadow: 10px 10px 10px #777;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 599px) {
+    video {
+        display: block;
+        float: none;
+        clear: both;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #homehero,
+    #yurthero,
+    #trailhero {
+        background-size: auto;
+    }
+    
+    table {
+        display: block;
+        border-bottom: none;
+        padding-top: 2%;
+    }
+
+    td,
+    th {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td.package::before {
+        content: "Package: ";
+    }
+
+    td.description::before {
+        content: "Description: ";
+    }
+
+    td.nights::before {
+        content: "Nights: ";
+    }
+
+    td.cost::before {
+        content: "Cost: ";
+    }
+
+    td.package,
+    td.description,
+    td.nights,
+    td.cost {
+        padding-left: 35%;
+        position: relative;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    td::before {
+        position: absolute;
+        top: 10px;
+        left: 0.5em;
+        font-weight: bold; /* fwb */
+        color: #1976d2;
+    }
+
+    td:last-of-type {
+        border-bottom: 2px solid #1b69b2;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav ul {
+        display: flex; /* df */
+        flex-wrap: nowrap; /* fxw */
+        justify-content: space-around; /* jcspar */
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    section {
+        margin: 0 2em;
+    }
+
+    form {
+        display: grid;
+        width: 60%;
+        max-width: 30em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
+    }
+
+    #homehero,
+    #yurthero,
+    #trailhero {
+        background-size: auto;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    #gallery {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        width: 80%;
+        margin: auto;
+        border: 1px solid #002171;
+        box-shadow: 3px 3px 3px #002171;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    @supports (display: grid) {
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1em;
+        }
+        
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+            padding: 0 15px;
+        }
+
+        nav li {
+            border: none;
+        }
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        } 
+
+        .hero {
+            grid-area: hero;
+        }
+
+        #wrapper {
+            display: grid;
+            /* grid-template-columns: max(180px, 1fr) 4fr; */
+            /* grid-template-rows: auto; */
+            grid-template:
+                "header header"
+                "nav hero"
+                "nav main"
+                "nav footer" 
+                / 180px 1fr;
+        }
+
+        #gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
