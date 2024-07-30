@@ -193,7 +193,8 @@ figure {
 }
 
 @media screen and (max-width: 599px) {
-    li { 
+    /* specifying nav so other lists don't get a border too */
+    nav li {
         border-bottom: 1px solid black; 
     }
     
