@@ -193,7 +193,7 @@ figure {
 }
 
 @media screen and (max-width: 599px) {
-    li { 
+    nav li { 
         border-bottom: 1px solid black; 
     }
     
