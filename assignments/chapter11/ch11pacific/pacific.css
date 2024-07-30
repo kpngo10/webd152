@@ -193,6 +193,10 @@ figure {
 }
 
 @media screen and (max-width: 599px) {
+    li { 
+        border-bottom: 1px solid black; 
+    }
+    
     video {
         display: block;
         float: none;
