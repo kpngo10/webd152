@@ -184,10 +184,15 @@ td {
     gap: 2em;
 }
 
+.container-partner {
+    display: flex;
+    flex-direction: column;
+}
+
 .team {
     height: auto;
-    width: 50%;
-    margin: 1.5em 0;
+    width: 100%;
+    margin: 1em 0;
 }
 
 /* Reservations Styling */
@@ -227,6 +232,17 @@ figure {
 }
 
 @media screen and (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .team {
+        width: 100%;
+        height: auto;
+    }
+
     nav li { 
         border-bottom: 1px solid black; 
     }
@@ -392,8 +408,6 @@ figure {
 
         #wrapper {
             display: grid;
-            /* grid-template-columns: max(180px, 1fr) 4fr; */
-            /* grid-template-rows: auto; */
             grid-template:
                 "header header"
                 "nav hero"
